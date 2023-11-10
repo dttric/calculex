@@ -22,18 +22,18 @@
         </Grid.ColumnDefinitions>
         <Menu Grid.Row="0" Grid.ColumnSpan="3" x:Name="calmenu" Margin="0,0,0,0" BorderThickness="0">
             <MenuItem Header="File">
-                <MenuItem Header="Clear History" Click="clickchistory"/>
-                <MenuItem Header="Save History">
-                    <MenuItem Header="soon"/>
+                <MenuItem Header="Clear History" Icon="🧹" Click="clickchistory"/>
+                <MenuItem Header="Save History" Icon="📥">
+                    <MenuItem Header="soon" Icon="⏳"/>
                 </MenuItem>
                 <MenuItem Header="Exit" Click="clickexit" Icon="🚫"/>
             </MenuItem>
             <MenuItem Header="Operations">
                 <MenuItem Header="Basic">
-                    <MenuItem IsCheckable="False" Header="add"/>
-                    <MenuItem IsCheckable="False" Header="sub"/>
-                    <MenuItem IsCheckable="False" Header="multi"/>
-                    <MenuItem IsCheckable="False" Header="div"/>
+                    <MenuItem IsCheckable="False" Header="add" Icon="+" />
+                    <MenuItem IsCheckable="False" Header="sub" Icon="-" />
+                    <MenuItem IsCheckable="False" Header="multi" Icon="*" />
+                    <MenuItem IsCheckable="False" Header="div" Icon="/" />
                     <Separator/>
                     <MenuItem IsCheckable="False" Header="Sqrt(x)"/>
                     <MenuItem IsCheckable="False" Header="Abs(x)"/>
