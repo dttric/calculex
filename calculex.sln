@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculex", "calculex\calculex.csproj", "{B855E1F0-0089-43C1-957A-92F5085E95FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B855E1F0-0089-43C1-957A-92F5085E95FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B855E1F0-0089-43C1-957A-92F5085E95FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B855E1F0-0089-43C1-957A-92F5085E95FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B855E1F0-0089-43C1-957A-92F5085E95FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4559FA06-DF45-4BE2-B300-D8F0AA0BC737}
+	EndGlobalSection
+EndGlobal
