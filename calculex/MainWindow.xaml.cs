@@ -26,6 +26,7 @@ namespace calculex
         {
             InitializeComponent();
         }
+
         private void getres_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -55,5 +56,11 @@ namespace calculex
         {
             resin.Text = "";
         }
+
+        private void clickexit(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
+
 }

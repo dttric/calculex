@@ -5,29 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:calculex"
         mc:Ignorable="d"
-        Title="calculex" Height="400" Width="415" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
+        Title="calculex" Height="420" Width="415" ResizeMode="NoResize" WindowStyle="SingleBorderWindow"
+        Foreground="#FF292929">
     <Grid Background="#375c94" x:Name="main">
         <Grid.RowDefinitions>
-            <RowDefinition Height="19*" />
-            <RowDefinition Height="309*" />
-            <RowDefinition Height="19*" />
-            <RowDefinition Height="25*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="307*" />
+            <RowDefinition Height="21*" />
+            <RowDefinition Height="23*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="290*" />
             <ColumnDefinition Width="30*" />
             <ColumnDefinition Width="30*" />
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Text="Output/History" Foreground="White" Margin="0,1"/>
-        <TextBlock Grid.Row="2" Grid.ColumnSpan="3" Text="Input" Foreground="White" Margin="0,1"/>
-        <RichTextBox x:Name="resout" Grid.ColumnSpan="3" Grid.Row="1" Foreground="White" Background="#FF292929" FontFamily="Consolas" FontSize="13" AcceptsReturn="False" AutoWordSelection="False" IsReadOnly="True" IsUndoEnabled="False" BorderThickness="0">
+        <Menu Grid.Row="0" Grid.ColumnSpan="3" x:Name="calmenu" Margin="0,0,0,0" BorderThickness="0">
+            <MenuItem Header="File" Height="20">
+                <MenuItem Header="Exit" Click="clickexit" Icon="🚫"/>
+            </MenuItem>
+        </Menu>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="Output/History" Foreground="White"/>
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="3" Text="Input" Foreground="White"/>
+        <RichTextBox x:Name="resout" Grid.Row="2" Grid.ColumnSpan="3" Foreground="White" Background="#FF292929" FontFamily="Consolas" FontSize="13" AcceptsReturn="False" AutoWordSelection="False" IsReadOnly="True" IsUndoEnabled="False" BorderThickness="0">
             <FlowDocument x:Name="resflow">
                 <Paragraph x:Name="respar" Margin="0, 0, 0, 0">
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <TextBox x:Name="resin" Grid.Row="3" Grid.Column="0" Foreground="White" Background="#FF292929" FontFamily="Consolas" FontSize="13" Text="" BorderThickness="0"/>
-        <Button x:Name="getres" Grid.Row="3" Grid.Column="1" Foreground="White" Background="#FF292929" Click="getres_Click" BorderThickness="0" >>>></Button>
-        <Button x:Name="AC" Grid.Row="3" Grid.Column="2" Foreground="White" Background="#FF292929" Click="AC_Click" BorderThickness="0" >AC</Button>
+        <TextBox x:Name="resin" Grid.Row="4" Grid.Column="0" Foreground="White" Background="#FF292929" FontFamily="Consolas" Text="" FontStretch="Expanded" FontSize="21" BorderThickness="0" />
+        <Button x:Name="getres" Grid.Row="4" Grid.Column="1" Foreground="White" Background="#FF292929" Click="getres_Click" BorderThickness="0" Grid.RowSpan="2" >>>></Button>
+        <Button x:Name="AC" Grid.Row="4" Grid.Column="2" Foreground="White" Background="#FF292929" Click="AC_Click" BorderThickness="0" Grid.ColumnSpan="2" Grid.RowSpan="2" >AC</Button>
     </Grid>
 </Window>
