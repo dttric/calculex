@@ -35,6 +35,7 @@ namespace calculex
                 object res = expr.Evaluate();
                 int resinlen = resin.Text.Length;
                 Run resoutrun = new Run(resin.Text + "\n"+ string.Join("", Enumerable.Repeat(" ", resinlen - 1)) + res.ToString() + "\n\n");
+                resoutrun.Foreground = Brushes.White;
                 respar.Inlines.Add(resoutrun);
                 resflow.Blocks.Add(respar);
                 resout.Document = resflow;
@@ -42,11 +43,12 @@ namespace calculex
             }
             catch (Exception ex)
             {
-                // Обработка исключения
-                MessageBox.Show(
-                    ex.Message,
-                    "Error"
-                );
+                Run resoutrun = new Run("Error:\n     " + ex.Message + "\n\n");
+                resoutrun.Foreground = Brushes.Red;
+                respar.Inlines.Add(resoutrun);
+                resflow.Blocks.Add(respar);
+                resout.Document = resflow;
+                resin.Text = "";
             }
         }
 
