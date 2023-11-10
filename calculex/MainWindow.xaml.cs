@@ -26,7 +26,7 @@ namespace calculex
         {
             InitializeComponent();
         }
-
+н
         private void getres_Click(object sender, RoutedEventArgs e)
         {
             try

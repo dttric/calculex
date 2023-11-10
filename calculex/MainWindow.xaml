@@ -10,12 +10,12 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="19*" />
             <RowDefinition Height="309*" />
-            <RowDefinition Height="19*"/>
+            <RowDefinition Height="19*" />
             <RowDefinition Height="25*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="289*"/>
-            <ColumnDefinition Width="31*" />
+            <ColumnDefinition Width="290*" />
+            <ColumnDefinition Width="30*" />
             <ColumnDefinition Width="30*" />
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Text="Output/History" Foreground="White" Margin="0,1"/>
