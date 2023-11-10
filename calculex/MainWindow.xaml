@@ -21,13 +21,42 @@
             <ColumnDefinition Width="30*" />
         </Grid.ColumnDefinitions>
         <Menu Grid.Row="0" Grid.ColumnSpan="3" x:Name="calmenu" Margin="0,0,0,0" BorderThickness="0">
-            <MenuItem Header="File" Height="20">
+            <MenuItem Header="File">
+                <MenuItem Header="Clear History" Click="clickchistory"/>
+                <MenuItem Header="Save History">
+                    <MenuItem Header="soon"/>
+                </MenuItem>
                 <MenuItem Header="Exit" Click="clickexit" Icon="🚫"/>
             </MenuItem>
+            <MenuItem Header="Operations">
+                <MenuItem Header="Basic">
+                    <MenuItem IsCheckable="False" Header="add"/>
+                    <MenuItem IsCheckable="False" Header="sub"/>
+                    <MenuItem IsCheckable="False" Header="multi"/>
+                    <MenuItem IsCheckable="False" Header="div"/>
+                    <Separator/>
+                    <MenuItem IsCheckable="False" Header="Sqrt(x)"/>
+                    <MenuItem IsCheckable="False" Header="Abs(x)"/>
+                </MenuItem>
+                <MenuItem Header="Functions">
+                    <MenuItem IsCheckable="False" Header="Round(x)"/>
+                    <MenuItem IsCheckable="False" Header="Sin(x)"/>
+                    <MenuItem IsCheckable="False" Header="Log10(x)"/>
+                    <MenuItem IsCheckable="False" Header="Floor(x)"/>
+                    <MenuItem IsCheckable="False" Header="Cos(x)"/>
+                    <MenuItem IsCheckable="False" Header="Acos(x)"/>
+                    <MenuItem IsCheckable="False" Header="Tan(x)"/>
+                    <MenuItem IsCheckable="False" Header="Pow(x)"/>
+                    <MenuItem IsCheckable="False" Header="Asin(x)"/>
+                    <MenuItem IsCheckable="False" Header="Atan(x)"/>
+                    <MenuItem IsCheckable="False" Header="Log(x)"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help" Click="gethelp"/>
         </Menu>
         <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text="Output/History" Foreground="White"/>
         <TextBlock Grid.Row="3" Grid.ColumnSpan="3" Text="Input" Foreground="White"/>
-        <RichTextBox x:Name="resout" Grid.Row="2" Grid.ColumnSpan="3" Foreground="White" Background="#FF292929" FontFamily="Consolas" FontSize="13" AcceptsReturn="False" AutoWordSelection="False" IsReadOnly="True" IsUndoEnabled="False" BorderThickness="0">
+        <RichTextBox x:Name="resout" Grid.Row="2" Grid.ColumnSpan="3" Foreground="White" Background="#FF313131" FontFamily="Consolas" FontSize="13" AcceptsReturn="False" AutoWordSelection="False" IsReadOnly="True" IsUndoEnabled="False" BorderThickness="0">
             <FlowDocument x:Name="resflow">
                 <Paragraph x:Name="respar" Margin="0, 0, 0, 0">
                 </Paragraph>

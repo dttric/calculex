@@ -61,6 +61,22 @@ namespace calculex
         {
             Environment.Exit(0);
         }
+
+        private void gethelp(object sender, RoutedEventArgs e)
+        {
+            Run resoutrun = new Run("there's gonna be help someday." + "\n\n");
+            resoutrun.Foreground = Brushes.Yellow;
+            respar.Inlines.Add(resoutrun);
+            resflow.Blocks.Add(respar);
+            resout.Document = resflow;
+            resin.Text = "";
+        }
+
+        private void clickchistory(object sender, RoutedEventArgs e)
+        {
+            respar.Inlines.Clear();
+            resout.Document.Blocks.Clear();
+        }
     }
 
 }
