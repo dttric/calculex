@@ -33,8 +33,13 @@ namespace calculex
             {
                 NCalc.Expression expr = new NCalc.Expression(resin.Text);
                 object res = expr.Evaluate();
+                int reslen = res.ToString().Length;
                 int resinlen = resin.Text.Length;
-                Run resoutrun = new Run(resin.Text + "\n"+ string.Join("", Enumerable.Repeat(" ", resinlen - 1)) + res.ToString() + "\n\n");
+                if (reslen > resinlen)
+                {
+                    reslen = resinlen;
+                }
+                Run resoutrun = new Run(resin.Text + "\n"+ string.Join("", Enumerable.Repeat(" ", resinlen - reslen)) + res.ToString() + "\n\n");
                 resoutrun.Foreground = Brushes.White;
                 respar.Inlines.Add(resoutrun);
                 resflow.Blocks.Add(respar);

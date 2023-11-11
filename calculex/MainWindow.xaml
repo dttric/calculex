@@ -36,7 +36,7 @@
                     <MenuItem IsCheckable="False" Header="multi" Icon="*"/>
                     <MenuItem IsCheckable="False" Header="div" Icon="/"/>
                     <Separator/>
-                    <MenuItem IsCheckable="False" Header="Pow(x)" Icon="^x"/>
+                    <MenuItem IsCheckable="False" Header="Pow(x, y)" Icon="xʸ"/>
                     <MenuItem IsCheckable="False" Header="Sqrt(x)" Icon="√x"/>
                     <MenuItem IsCheckable="False" Header="Abs(x)" Icon="|x|"/>
                 </MenuItem>
