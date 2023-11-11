@@ -1,17 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
-    <UseWPF>true</UseWPF>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <Authors>dttric</Authors>
-    <Company />
+	<OutputType>WinExe</OutputType>
+	<TargetFramework>net5.0-windows</TargetFramework>
+	<UseWPF>true</UseWPF>
+	<EnableWindowsTargeting>true</EnableWindowsTargeting>
+	<Authors>dttric</Authors>
+	<ApplicationIcon>calculator_3534.ico</ApplicationIcon>
+	<Company />
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CoreCLR-NCalc" Version="2.2.113" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+	<PackageReference Include="CoreCLR-NCalc" Version="2.2.113" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
