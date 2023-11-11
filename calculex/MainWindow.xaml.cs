@@ -69,7 +69,7 @@ namespace calculex
 
         private void gethelp(object sender, RoutedEventArgs e)
         {
-            Run resoutrun = new Run("there gonna be help someday." + "\n\n");
+            Run resoutrun = new Run("https://github.com/dttric/calculex/wiki" + "\n\n");
             resoutrun.Foreground = Brushes.Yellow;
             respar.Inlines.Add(resoutrun);
             resflow.Blocks.Add(respar);
